@@ -1,9 +1,10 @@
 # kickstarter-analysis
 Performing analysis on kickstarter data to uncover trends in campaign success.
 
-## Overview of Project
+# 1. Overview of Project
 Louise’s play *Fever* came close to its fundraising goal in a short amount of time. Now, she wants to know how different campaigns fared in relation to their launch dates and their funding goals.
 
+# 2. Analysis and Challenges
 ## Cleaning Data
 The main challenge with exploring this dataset was formating the **lanched_at variable**. In it's raw format, it is a ten digit timestamp that is difficult to understand. As it is the timestamp shows total seconds that have passed since the epoch, which is January 1, 1970 in Unix. I had to convert the date to a more readible format using this code:
 
@@ -38,15 +39,17 @@ The first argument of the =COUNTIFS() function is a range and the second argumen
 
 ![Exhibit B](Outcomes_vs_Goals.png)
 
-## Results
+# 3. Results
 
+## Conclusion
 Looking at Exhibit A, it is clear that from January until April both successful and failed campaigns follow a similar pattern. There are about 20 more successful than failed campaigns throughout these months. There is a local maxima for both successful and failed campaigns in February, which means that more campaigns were launched that month. There is a large spike of successful campaigns in May. Additionally, there is no similar spike of failed campaigns in May which means that it isn't just the case that more campaigns were launched in May. Theater campaigns that  launch in May had a higher liklihood of being successful. However, as the year progresses, there is a general downward trend of successful campaigns. The gap between successful and failed campaigns narrows. Campaigns launched in December has almost an equal liklihood of failure and success. The number of canceled campaigns stays low and relatively constant throughout the year.
 
 Exhibit B shows the percentage of failed and successful play campaigns by goal dollar amount. Plays that have a goal of less than $1000 have a high chance of being successful (~75%). However this liklihood diminishes as the goal amount grows. If the goal is between $15,000 and $35,000, the campaign is more likely to fail than succeed. Campaigns between $35,000 and $45,000 are more likely to succeed (~65%) than fail (~35%). Campaigns with goals greater than $50,000 are very unlikely to be sucessful (~15%).
 
 Recommendation: If Louise's primary goal is to be successful in her campaign, she should launch it in May with a goal of less than $1000. However, if she needs more than that to finance her play, she should consider setting the goal around $40,000. 
 
-There are some limitations within the dataset. It would be interesting to see if this is the organizer's first kickstarter campaign. I would also like to see if social media played a role in campaign success. I would also like to see if there are any geographical trends within each country (ubran/rural/suburban).
+## Opportunities for Further Analysis
+There are some limitations within the dataset. It would be interesting to see if this is the organizer's first kickstarter campaign. I would also like to see if social media played a role in campaign success. I would also like to see if there are any geographical trends within each country (ubran/rural/suburban). All of these missing variables could potentially offer better insight regarding kickstarter campaign sucess.
 
 There is opportunity for further analysis if we looked at the average amount pledged per donor, so we could see if successful campaigns tend to be backed by a large number of small donations or vice versa. 
 
