@@ -2,7 +2,7 @@
 Performing analysis on kickstarter data to uncover trends in campaign success.
 
 # 1. Overview of Project
-Louise’s play *Fever* came close to its fundraising goal in a short amount of time. Now, she wants to know how different campaigns fared in relation to their launch dates and their funding goals.
+Louise’s play *Fever* came close to its fundraising goal in a short amount of time. Now, she wants to know how different campaigns fared in relation to their launch dates and their funding goals. In order to do this, we will primarily consider two variables: timing of campaign launch and monetary goal of campaign. Because Louise is interested in play campaign outcomes, we will subset the data to only include the parent category of theater and the subcategory of play.
 
 # 2. Analysis and Challenges
 ## Cleaning Data
